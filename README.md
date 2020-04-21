@@ -52,7 +52,7 @@ This assumes the node's hostnames are the same as their API names, which is the 
 
 ## Other considerations
 
-The deployment of `hetzner-ip-floater` should be limited to those nodes where the floating IP is locally configured, otherwise incoming trafic will be dropped. I use the constraint veriable in the docker stack compose file to achieve this.
+The deployment of `floater` should be limited to those nodes where the floating IP is locally configured (you need to add the IP addresses as above), otherwise incoming traffic will be dropped. I use the constraint veriable in the docker stack compose file to achieve this.
 
 The same nodes should also be configured as ingress nodes. When using the [default mesh networking](https://docs.docker.com/engine/swarm/ingress/) on docker swarm, this is already the case for all worker nodes.
 
