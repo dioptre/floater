@@ -24,7 +24,7 @@ If you have more than one, do eth0:2, eth0:3 etc...
 
 ### Add your secret
 
-echo "hetzner_api_key" | docker secret create hetzner_api_key_for_floating_ip -
+echo "23497823423847248hetzner_api_key23498723948723497" | docker secret create hetzner_api_key_for_floating_ip -
 
 ### Configure Docker Swarm
 
