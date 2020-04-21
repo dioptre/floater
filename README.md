@@ -1,4 +1,4 @@
-# hetzner-ip-floater
+# Floater (Floating IP Management for Hetzner Cloud)
 
 Minimalistic floating IP setter for container clusters using Docker Swarm running on [Hetzner Cloud](https://www.hetzner.com/cloud).
 
