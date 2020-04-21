@@ -1,4 +1,4 @@
-module github.com/costela/hetzner-ip-floater
+module github.com/sfproductlabs/floater
 
 go 1.12
 

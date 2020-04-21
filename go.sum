@@ -1,2 +1,4 @@
 github.com/hetznercloud/hcloud-go v1.14.0 h1:6IdF0Vox/6j1pyEdUCbFPIzEH/K9xZZzVuSFro8Y2vw=
 github.com/hetznercloud/hcloud-go v1.14.0/go.mod h1:8lR3yHBHZWy2uGcUi9Ibt4UOoop2wrVdERJgCtxsF3Q=
+github.com/sfproductlabs/floater v0.1.0 h1:RC4gfBQJ6ua0N7SUthIlEv8WdCCZ3afeF5UwNk3UQlU=
+github.com/sfproductlabs/floater v0.1.0/go.mod h1:vh6q47HKw8ZV+coaD17i2YON5Y4eL9nC4gxsxe0p5F0=
