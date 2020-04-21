@@ -42,6 +42,10 @@ Then logout if you don't need the connection
 
 echo "23497823423847248hetzner_api_key23498723948723497" | docker secret create hetzner_api_key_for_floating_ip -
 
+### Add labels to the machines you want to be edges
+
+```docker node update --label-add floater=true docker1-prod```
+
 ### Configure Docker Swarm
 
 This is an example deployment for `docker stack deploy`:
@@ -59,7 +63,7 @@ services:
       replicas: 1
       placement:
         constraints:
-          - node.labels.load_balancer == true      
+          - node.labels.floater == true      
       restart_policy:
         condition: any          
 ```
