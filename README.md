@@ -54,4 +54,4 @@ The same nodes should also be configured as ingress nodes. When using the [defau
 
 ## Credits
 * Thanks to this fella I didn't have to write it.
-[Original Author](/costela)
+[Original Author](https://github.com/costela)
