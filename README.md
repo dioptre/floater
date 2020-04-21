@@ -32,7 +32,7 @@ This is an example deployment for `docker stack deploy`:
 ```yaml
 services:
   lb1:
-    image: costela/hetzner-ip-floater
+    image: sfproductlabs/floater
     secrets:
       - hetzner_api_key_for_floating_ip  # set via `docker secret create`
     environment:
