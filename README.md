@@ -1,6 +1,6 @@
 # Floater (Floating IP Management for Hetzner Cloud)
 
-Minimalistic floating IP setter for container clusters using Docker Swarm running on [Hetzner Cloud](https://www.hetzner.com/cloud).
+Minimalistic floating IP setter for container clusters using Docker Swarm running on [Hetzner Cloud](https://www.hetzner.com/cloud). See https://docs.hetzner.cloud/ for documentation.
 
 ## Usage
 
@@ -21,6 +21,19 @@ iface eth0:1 inet static
 ```
 
 If you have more than one, do eth0:2, eth0:3 etc...
+
+Then download the hetzner cli (https://github.com/hetznercloud/cli):
+
+```go get -u github.com/hetznercloud/cli/cmd/hcloud```
+
+Then login using your api key from their site
+
+```hcloud context create my-project```
+
+Then run this to get the IDs of your floating IPs (will use these in the docker stack docker-compose.yml config.
+
+```hcloud floating-ip list```
+
 
 ### Add your secret
 
