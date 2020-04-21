@@ -34,6 +34,9 @@ Then run this to get the IDs of your floating IPs (will use these in the docker 
 
 ```hcloud floating-ip list```
 
+Then logout if you don't need the connection
+
+```hcloud context delete my-project```
 
 ### Add your secret
 
