@@ -6,9 +6,23 @@ Minimalistic floating IP setter for container clusters using Docker Swarm runnin
 
 This project should be used as a container. It will run once and update a given floating IP to point to the node currently running it. This can be used to ensure the floating IP will be reassigned upon node failure, by relying on the underlying cluster to redeploy this service on a healthy node.
 
+### Configure IPs
+
 You need to configure the floating IPs for the machines you'll use. If you have 3 IPs you'll need to add all 3. Even though the IPs conflict, Hetzner has assured me there will be no issues `You can have the floating IP configured within multiple servers but as it is routed only to the server where the IP is assinged to no issue will occur.` (Hetzner Support).
 
 https://wiki.hetzner.de/index.php/Cloud_floating_IP_persistent/en
+
+Or add these for each IP. On debian flavours:
+```
+auto eth0:1
+iface eth0:1 inet static
+    address your.Float.ing.IP
+    netmask 32
+```
+
+If you have more than one, do eth0:2, eth0:3 etc...
+
+### Configure Docker Swarm
 
 This is an example deployment for `docker stack deploy`:
 ```yaml
