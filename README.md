@@ -12,7 +12,7 @@ You need to configure the floating IPs for the machines you'll use. If you have 
 
 https://wiki.hetzner.de/index.php/Cloud_floating_IP_persistent/en
 
-Or add these for each IP. On debian flavours:
+Or add these for each IP. On debian flavours `vi /etc/network/interfaces.d/60-my-floating-ip.cfg`:
 ```
 auto eth0:1
 iface eth0:1 inet static
