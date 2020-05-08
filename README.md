@@ -1,5 +1,5 @@
 # Floater (Floating IP Management for Hetzner Cloud)
-**This is not a recommendation for using Hetzner. They do not have 24 hour support and scaling machines beyond their limits (10 per customer) takes months. There's more than one story online of people under heavy load getting switched off as traffic is incorreclty assumed to be a DDOS. I'm really looking forward to the day they mature, but please be warned.**
+**This is not a recommendation for using Hetzner. They do not have 24 hour support and scaling machines beyond their limits (10 per customer) takes months. There's more than one story online of people under heavy load getting switched off as traffic is incorreclty assumed to be a DDOS. I'm really looking forward to the day they mature, but please be warned. I'm assuming the risk personally but want other people to understand it too.**
 
 Minimalistic floating IP setter for container clusters using Docker Swarm running on [Hetzner Cloud](https://www.hetzner.com/cloud). See https://docs.hetzner.cloud/ for documentation.
 
